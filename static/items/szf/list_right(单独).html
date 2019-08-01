@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=2.0">
+
+    <title></title>
+    <!-- common.css -->
+    <style>
+        html {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td,
+        hr,
+        button,
+        article,
+        aside,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+            display: block;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        .whole {
+            width: 100%;
+        }
+        
+        body {
+            font-size: 16px;
+        }
+        
+        .content {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .body_bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        .body_bg img {
+            width: 100%;
+        }
+        
+        .main {
+            margin-top: 210px;
+            z-index: 9;
+            width: 100%;
+        }
+        
+        .main_body {
+            padding: 15px 0;
+        }
+        
+        .main_body .content {
+            overflow: hidden;
+        }
+        
+        .block_tittle_1 {
+            background: #6a6a6a;
+            overflow: hidden;
+        }
+        
+        .block_tittle_1:nth-child(1) {
+            width: 60%;
+        }
+        
+        .block_tittle_1 a {
+            color: #fff;
+            float: left;
+            width: 50%;
+            font-size: 1.2em;
+            padding: 5px 0;
+            text-align: center;
+            transition: background 0.5s;
+            -webkit-transition: background 0.5s;
+            -o-transition: background 0.5s;
+            -moz-transition: background 0.5s;
+        }
+        
+        .tittle_checked_1 {
+            background: #0e9fee;
+        }
+        
+        .block_tittle_2 {
+            padding: 0 30px;
+            margin-bottom: 1px;
+            overflow: hidden;
+            background: #fff;
+        }
+        
+        .block_tittle_2 div {
+            width: 7px;
+            height: 28px;
+            background: #0e9fee;
+            float: left;
+            margin-right: 10px;
+        }
+        
+        .block_tittle_2 a {
+            color: #1f1f1f;
+            float: left;
+            width: 50%;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .tittle_checked_2 {
+            color: #0e9fee !important;
+        }
+        
+        .block_list li {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px dashed #dedede;
+            transition: background 0.5s;
+            -webkit-transition: background 0.5s;
+            -o-transition: background 0.5s;
+            -moz-transition: background 0.5s;
+        }
+        
+        .block_list li:hover {
+            background: #e5e5e5;
+        }
+        
+        .block_list li a {
+            color: #1f1f1f;
+            overflow: hidden;
+        }
+        
+        .list_name {
+            width: 80%;
+            float: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .list_time {
+            float: right;
+            text-align: right;
+        }
+        
+        .pageing {
+            margin-top: 4%;
+            text-align: center;
+        }
+        
+        .pageing a {
+            display: inline-block;
+            font-size: 0.7em;
+            margin-bottom: 5px;
+            padding: 10px 20px;
+            color: #525252;
+            border: 1px solid #dedede;
+            transition: background 0.5s, color 0.5s, border 0.5s;
+            -webkit-transition: background 0.5s, color 0.5s, border 0.5s;
+            -o-transition: background 0.5s, color 0.5s, border 0.5s;
+            -moz-transition: background 0.5s, color 0.5s, border 0.5s;
+        }
+        
+        .pageing a:hover {
+            border: 1px solid #0e9fee;
+            background: #0e9fee;
+            color: #fff;
+        }
+    </style>
+    <!-- inpage_common.css -->
+    <style>
+        .inpage_title {
+            margin-bottom: 15px;
+            overflow: hidden;
+            color: #1f1f1f;
+            font-size: 1.5em;
+        }
+        
+        .inpage_title a,
+        .inpage_title div {
+            width: 50%;
+            float: left;
+            color: #1f1f1f;
+        }
+        
+        .inpage_title_1 {
+            color: #0e9fee !important;
+        }
+        
+        .inpage_title_2 {
+            color: #1f1f1f;
+        }
+        
+        .inpage_block {
+            margin-bottom: 40px;
+        }
+        
+        .inpage_row {
+            background: #dbf1fc;
+            margin-top: 20px;
+            padding: 15px 30px;
+            color: #1f1f1f;
+            overflow: hidden;
+            transition: background 0.5s;
+            -webkit-transition: background 0.5s;
+            -o-transition: background 0.5s;
+            -moz-transition: background 0.5s;
+        }
+        
+        .inpage_row:hover {
+            background: #b4e6ff;
+        }
+        
+        .inpage_right {
+            float: right;
+            width: 72.5%;
+        }
+        
+        .inpage_right_body {
+            margin-left: 40px;
+        }
+        
+        .block_list li {
+            border-bottom: 0;
+        }
+    </style>
+    <!-- 手机适配 -->
+    <style>
+        @media screen and (max-width: 768px) {
+            html {
+                overflow-x: hidden;
+            }
+            body {
+                font-size: 14px;
+            }
+            .inpage_right {
+                width: 100%;
+            }
+            .inpage_right_body {
+                margin-left: 0px;
+            }
+            .list_name {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inpage_right">
+        <div class="inpage_right_body">
+            <div class="inpage_block">
+                <a href="list.html" class="inpage_title">
+                    <div class="inpage_title_1">统计公报</div>
+                </a>
+
+                <ul class="block_list">
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">6年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">关于对2016年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">关于对2016年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">关于对2016年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">关于对2016年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail.html">
+                            <div class="list_name">关于对2016年第三季度“江城好人”进行公示的公关于对2016年第三季度“江城好人”进行公示的公</div>
+                            <div class="list_time">05-12</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="pageing">
+            <a href="javascript:;">上一页</a>
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">1</a>
+            <a href="javascript:;">尾页</a>
+            <a href="javascript:;">下一页</a>
+        </div>
+    </div>
+</body>
+
+</html>

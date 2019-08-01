@@ -1,0 +1,112 @@
+﻿@import "css3-library";
+@import "definition";
+
+
+
+//////////////////////////////////////////////////////////////台式
+
+
+
+    /////////////////////////////////////////////////////////////内页 市长-职务
+
+    .mayor_post {
+
+        .inpage_title_2 {
+            text-align:right;
+        }
+    }
+
+    .mayor_photo {
+        text-align:center;
+        margin:40px 0;
+
+        img {
+            .img(80%);
+        }
+    }
+
+    .mayor_row {
+        overflow: hidden;
+
+        img {
+            vertical-align: bottom;
+            display: block;
+            float: left;
+            margin-right:10px;
+        }
+
+        span {
+            line-height:25px;
+        }
+    }
+
+    //////////////////////////////////////////////////////////////内页 市长-同事
+
+    .mayor_colleague {
+        .inpage_title_1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inpage_row {
+            span {
+
+                &:nth-child(1) {
+                    float:left;
+                    color:@theme_color_1;
+                }
+                &:nth-child(2) {
+                    float:right;
+                }
+            }
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////内页 市长-工作动态
+
+    .work {
+        .block_list {
+            border-bottom:1px dashed @line_color;
+            padding-bottom:20px;
+            margin-bottom:20px;
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////内页 市长-图片
+
+    .pic {
+        li {
+            &:nth-child(3),&:nth-child(6) {
+                margin-right:0;
+            }
+        }
+    }
+
+
+@media screen and (max-width:1366px) {
+
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .mayor_photo {
+
+        img {
+            width:60%;
+        }
+    }
+
+    .pic {
+        margin-bottom:0;
+
+        li {
+            &:nth-child(3){
+                margin-right:20px;
+            }
+            &:nth-child(2),&:nth-child(4),&:nth-child(6){
+                margin-right:0;
+            }
+        }
+    }
+}

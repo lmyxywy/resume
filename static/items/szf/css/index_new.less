@@ -1,0 +1,826 @@
+﻿@import "css3-library";
+@import "definition";
+
+    body {
+        position:relative;
+    }
+    
+    
+    ////////////////////////////////////////////////////////////////////////////模块
+    .block {
+        margin-bottom:15px;
+
+        &:nth-child(3),&:nth-child(5) {
+            width:57%;
+            float:left;
+            overflow:hidden;
+        }
+
+        &:nth-child(4),&:nth-child(6) {
+            width:42%;
+            float:right;
+            overflow:hidden;
+        }
+
+        &:nth-child(7),&:nth-child(9) {
+            width:30%;
+            float:left;
+            overflow:hidden;
+        }
+        &:nth-child(8),&:nth-child(10) {
+            width:69%;
+            float:right;
+            overflow:hidden;
+        }
+    }
+    
+    .block_left {
+        float:left;
+    }
+    .block_right {
+        float:right;
+    }
+
+    ////////////////////////////////////////////////////////////////////今日关注
+
+    .concern {
+        background:#fff;
+        margin-bottom:15px;
+        overflow:hidden;
+    }
+    .concern_left {
+        float: left;
+        width: 76%;
+        overflow: hidden;
+
+        img {
+            vertical-align: middle;
+            margin: 10px 30px;
+            float: left;
+        }
+
+        span {
+            font-size: 2em;
+            color: #8e0d2b;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+            width: 80%;
+            margin-top: 25px;
+            .transition(color 0.5s);
+
+            &:hover {
+                color:rgba(0, 0, 0, 0.50);
+            }
+        }
+    }
+    .concern_right {
+        float: right;
+        width: 24%;
+
+        iframe {
+            margin-top:20px;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////图片新闻轮播
+    .pic_news {
+        margin-top:35px;
+
+        .swiper-slide {
+            a {
+                position:relative;
+            }
+
+            img {
+                .img(100%);
+                height: 285px;
+            }
+        }
+
+        .pagination {
+            position: absolute;
+            bottom: 15px;
+            right:10px;
+        }
+
+        .swiper-pagination-switch {
+            width: 8px;
+            height: 8px;
+            background: #fff;
+        }
+
+        .swiper-active-switch {
+            background: @theme_color_1;
+        }
+
+        .arrow-left {
+            top: 35%;
+        }
+
+        .arrow-right {
+            top: 35%;
+            right: 25px;
+        }
+    }
+
+    .pic_news_tittle {
+        color: #fff;
+        overflow: hidden;
+        height: 25px;
+        line-height: 25px;
+        font-size: 1.2em;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 96%;
+        padding: 10px 2%;
+
+        span {
+            display: inline-block;
+            width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    //////////////////////////////////////////////////////////////////////视频
+    .video {
+        padding-top:20px;
+    }
+    .video_body {
+        overflow:hidden;
+    }
+    .video_left {
+        float: left;
+        width: 57%;
+        color:@word_color_1;
+
+        img {
+            width:100%;
+        }
+    }
+    .video_name {
+        font-size: 1.1em;
+        margin-top: 10px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .video_right {
+        float: right;
+        width: 40%;
+
+        li {
+            margin-bottom: 1px;
+            background: #f7f7f7;
+            .transition(background 0.5s);
+
+            &:hover {
+                background: #fff;
+            }
+
+            a {
+                padding: 10px 20px;
+                color: @word_color_1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+            }
+        }
+    }
+    ///////////////////////////////////////////////////////////////////////////////江城要闻、县（市）要闻
+
+    .focus {
+        .block_tittle_1 {
+            width: 100%;
+        }
+
+        .block_list {
+            margin-top:10px;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////通知公告
+
+    .notice {
+        .block_body {
+            padding: 20px 30px 30px 30px;
+        }
+
+        .list_name {
+            width:100%;
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////三按钮
+
+    .three_btn {
+        margin-top: 15px;
+        overflow: hidden;
+
+        a {
+            width: (1-0.01)/3*100%;
+            background: #fff;
+            text-align: center;
+            color: @theme_color_1;
+            padding: 22px 0;
+            float: left;
+            font-size: 1.2em;
+            margin-right: 1px;
+            .transition(background 0.5s);
+
+            &:hover {
+                background:#e5e5e5;
+            }
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            img {
+                width: 27%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////通栏活动
+
+    .activity {
+        clear: both;
+        margin-bottom: 15px;
+
+        img {
+            .img(100%);
+        }
+
+
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100%;
+            text-align: right;
+        }
+
+        .swiper-pagination-switch {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+  /////////////////////////////////////////////////////////////////通知公告、人事任免
+    .small_block {
+        .block_body {
+            padding-top:15px;
+        }
+
+        .list_name {
+            width: 100%;
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////政府文件、政策解读
+
+    .gov {
+        .block_body {
+            padding:33px 30px;
+        }
+
+        .block_left {
+            width: 43%;
+
+            img {
+                .img(93%);
+            }
+        }
+
+        .block_right {
+            width: 57%;
+        }
+
+        .block_tittle_1 {
+            width: 100%;
+        }
+
+        .block_list {
+            margin-top: 15px;
+
+            li {
+                border-bottom: 0;
+            }
+        }
+    }
+    .gov_left_img {
+        position: relative;
+
+        &:nth-child(1) {
+            margin-bottom:40px;
+        }
+    }
+    .gov_left_img_word {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 93%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.1em;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width:50px;
+        }
+
+        span {
+            padding: 10px;
+            width: 50%;
+            margin: 13% auto;
+            margin-bottom: 0;
+            display: block;
+            background: #ff9a53;
+        }
+    }
+    .gov_left_img_word_span {
+        background:@theme_color_1!important;
+        font-size:0.9em;
+        line-height:25px;
+        margin-top:9%!important;
+    }
+    ///////////////////////////////////////////////////////////////////////在线访谈、建言献策
+
+    .online {
+        .block_left {
+            width: 57%;
+        }
+
+        .block_right {
+            width: 40%;
+        }
+
+        .block_tittle_1 {
+            width: 100%;
+        }
+
+        .block_list {
+            margin-top: 15px;
+
+            li {
+                border-bottom: 0;
+            }
+        }
+
+        .list_name {
+            width:70%;
+        }
+    }
+    .online_body {
+        margin-top:30px;
+
+        .list_name {
+            width:100%;
+        }
+    }
+
+    .online_first {
+        overflow:hidden;
+        color:@word_color_1;
+    }
+    .online_left {
+        float: left;
+        width: 40%;
+
+        img {
+            .img(100%);
+        }
+    }
+    .online_right {
+        float: right;
+        width: 58%;
+
+        div {
+            .line_height(33px);
+            overflow: hidden;
+            font-size: 1.1em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:nth-child(1) {
+                color: red;
+            }
+        }
+    }
+    .interview {
+        position: relative;
+
+        img {
+            .img(100%);
+        }
+    }
+    .interview_top {
+        position: absolute;
+        width: 93%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.10);
+        }
+    }
+    .interview_top_word {
+        font-size:1.5em;
+        margin-top:35%;
+        margin-bottom:10px;
+    }
+    .interview_top_btn {
+        background:@theme_color_1;
+        color:#fff;
+        cursor:pointer;
+        width:30%;
+        padding:7px 0;
+        margin:0 auto;
+        .transition(background 0.5s);
+
+        &:hover {
+            background:@theme_hover_color;
+        }
+    }
+
+    //////////////////////////////////////在线访谈、建言献策右侧仨按钮
+
+    .online_btn_body {
+        background: @theme_color_1;
+        color: #fff;
+        font-size: 1.5em;
+        .transition(background 0.5s);
+        position: relative;
+        overflow: hidden;
+        padding: 15px 40px;
+        margin-bottom: 40px;
+
+        &:hover {
+            background: @theme_hover_color;
+        }
+
+        img {
+            float: left;
+            margin-right: 15px;
+            vertical-align: bottom;
+        }
+
+        span {
+            display:inline-block;
+            margin-top:5px;
+        }
+
+        &:nth-child(1) {
+            font-size: 1.1em;
+            padding: 20px 40px;
+
+            img {
+                float: left;
+                margin-right: 30px;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+
+    .inves {
+        background: @theme_color_1;
+        margin-top: 30px;
+        font-size: 1.5em;
+        .transition(background 0.5s);
+        position: relative;
+
+        &:hover {
+            background: @theme_hover_color;
+        }
+
+        img {
+            vertical-align: bottom;
+                margin-right: 15px;
+        }
+
+    }
+    .inves_btn {
+            color:#fff;
+            padding:20px 50px;
+    }
+    .inves_body {
+        position: absolute;
+        background: #fff;
+        width: 150%;
+        height: 320px;
+        left: -150%;
+        bottom: -30px;
+        color: #000;
+        z-index:9;
+        overflow: hidden;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.10);
+        display:none;
+    }
+
+    .inves_body iframe {
+        width: 102%;
+        height: 297px;
+    }
+    //////////////////////////////////////////////////////////////////////////城市名片
+    .six_btn_whole {
+        width:100%;
+        float:none;
+    }
+    .six_btn {
+        overflow: hidden;
+
+        a {
+            float: left;
+            width: (1-0.1)/6*100%;
+            margin-right: 1.7%;
+            color: @word_color_1;
+            border: 1px solid @theme_color_1;
+            .transition(background 0.5s,color 0.5s);
+
+            &:hover {
+                background:@theme_color_1;
+                color:#fff;
+            }
+            &:nth-child(6) {
+                margin-right:0;
+            }
+        }
+    }
+    .six_btn_icon {
+        background:@theme_color_1;
+        width:30%;
+        float:left;
+        padding:7px 10px;
+        text-align:center;
+    }
+    .six_btn_word {
+        text-align:center;
+        line-height:50px;
+    }
+    ///////////////////////////////////////////////////////////////////////////最新专题
+
+    .four_activity {
+        overflow: hidden;
+        padding-top:30px!important;
+
+        a {
+            width: 100%;
+            margin-bottom: 8px;
+
+            /*&:nth-child(1), &:nth-child(3) {
+                float: left;
+            }
+
+            &:nth-child(2), &:nth-child(4) {
+                float: right;
+                margin-right: 0;
+            }*/
+
+            &:nth-child(3), &:nth-child(4) {
+                margin-bottom: 0;
+            }
+
+            img {
+                .img(100%);
+            }
+        }
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////swiper2x版本样式
+
+    .swiper-slide {
+        height: auto !important;
+    }
+
+    .swiper-wrapper {
+        height: auto !important;
+    }
+
+    .swiper-container {
+        position: relative;
+    }
+
+    .pagination {
+        /*position: absolute;
+        z-index: 20;
+        left: 46%;
+        bottom: 10px;*/
+    }
+
+    .swiper-pagination-switch {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: @line_color;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .swiper-visible-switch {
+        background: @line_color;
+    }
+
+    .swiper-active-switch {
+        background: @theme_color_1;
+    }
+
+    .arrow-left {
+        position: absolute;
+        left: 0px;
+        top: 45%;
+        width: 17px;
+        height: 30px;
+        font-size: 3em;
+        color: rgba(34, 34, 34, 0.5);
+    }
+
+    .arrow-right {
+        position: absolute;
+        right: 0px;
+        top: 45%;
+        width: 17px;
+        height: 30px;
+        font-size: 3em;
+        color: rgba(34, 34, 34, 0.5);
+    }
+
+
+@media screen and (max-width:768px) {
+    
+    .main {
+        margin-top:50px;
+    }
+    .main_body {
+        padding-bottom:0px;
+    }
+    .block {
+        width:100%!important;
+    }
+    .block_body {
+        padding:15px;
+        height:auto!important;
+    }
+    .block_tittle_1 {
+        width:100%!important;
+    }
+    .block_tittle_2 {
+        padding: 0 15px;
+
+        a {
+            padding:15px 0;
+            font-size:1.2em;
+        }
+    }
+    .list_name {
+        width:70%;
+    }
+
+    //////////////////////////////////////////////////////////今日关注
+
+    .concern_left,.concern_right {
+        width:100%;
+        float:none;
+    }
+    .concern_left {
+        img {
+            width: 35px;
+            margin: 10px;
+            margin-left: 15px;
+        }
+
+        span {
+            width: 80%;
+            font-size: 1em;
+            margin-top: 12px;
+            /*text-overflow: ellipsis;*/
+            white-space: initial;
+            height:30px;
+        }
+    }
+    .concern_right iframe {
+        margin-top: 0;
+        margin-bottom:5px;
+    }
+    .pic_news {
+        margin-top: 15px;
+        height: auto;
+
+        .swiper-slide img {
+            height: auto;
+        }
+
+        .arrow-left, .arrow-right {
+            display: none;
+        }
+
+        .pagination {
+            bottom:10px;
+        }
+    }
+    .pic_news_tittle {
+        width:98%;
+        padding:5px 1%;
+
+        span {
+            width:65%;
+        }
+    }
+    .video_left {
+        width:100%;
+    }
+    .video_right {
+        width: 100%;
+        margin-top:15px;
+
+    }
+    .notice {
+        .block_body {
+            padding: 15px;
+        }
+    }
+    .gov {
+        .block_body {
+            padding: 15px;
+        }
+
+        .block_left {
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .interview_top {
+            width:100%;
+        }
+    }
+    .gov_left_img_word {
+        width:100%;
+    }
+    .online_btn_body {
+        margin-bottom:15px;
+    }
+    .inves {
+        margin-top:15px;
+    }
+    .six_btn a {
+        width: 100%;
+        margin-bottom:15px;
+
+        &:nth-child(6) {
+            margin-bottom:0;
+        }
+    }
+
+    .four_activity a {
+        width:100%;
+        margin-bottom:15px!important;
+    }
+    ///////////////////////////////////////移动端 专题活动
+
+    .activity {
+        .content {
+            width: 98%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+    
+    .activity .pagination {
+        position: absolute;
+        z-index: 20;
+        left: 46%;
+        bottom: 5px;
+    }
+    .activity .arrow-left,.activity .arrow-right {
+        top: 25%;
+    }
+
+    
+}

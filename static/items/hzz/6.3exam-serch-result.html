@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+    <title>辉发河 河长制综合信息管理平台</title>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Import google fonts -->
+    <!-- <link href='http://fonts.useso.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'> -->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-touch-icon-152x152.png" />
+
+    <!-- start: CSS file-->
+
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/skycons/css/skycons.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/vendor/css/pace.preloader.css" rel="stylesheet" />
+
+    <!-- Plugins CSS-->
+    <link href="assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+    <link href="assets/plugins/scrollbar/css/mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/bootkit/css/bootkit.css" rel="stylesheet" />
+    <link href="assets/plugins/magnific-popup/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />
+    <link href="assets/plugins/jqvmap/jqvmap.css" rel="stylesheet" />
+
+    <!-- Theme CSS -->
+    <link href="assets/css/jquery.mmenu.css" rel="stylesheet" />
+
+    <!-- Page CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/add-ons.min.css" rel="stylesheet" />
+
+    <!-- end: CSS file-->
+    <!-- datatime CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.css" />
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr/js/modernizr.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+<style type="text/css">
+    .panel tbody tr td {
+        vertical-align: middle;
+    }
+    
+    .breadcrumb>li a {
+        color: #000;
+    }
+    
+    .breadcrumb>li+li:before {
+        color: #CCCCCC;
+        content: "/ ";
+        padding: 0 5px;
+    }
+</style>
+
+<body>
+
+    <!-- Start: Header -->
+    <div class="navbar" role="navigation">
+        <div class="container-fluid container-nav">
+            <!-- Navbar Action -->
+            <ul class="nav navbar-nav navbar-actions navbar-left">
+                <li class="visible-md visible-lg"><a href="#" id="main-menu-toggle"><i class="fa fa-th-large"></i></a></li>
+                <li class="visible-xs visible-sm"><a href="#" id="sidebar-menu"><i class="fa fa-navicon"></i></a></li>
+            </ul>
+            <!-- 横版导航左侧 -->
+            <div class="navbar-left main_nav">
+                <div class="mobile-nav">
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="index.html">
+                            <i class="fa fa-laptop icon-bg-1"></i> 综合展示</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="2info-manage.html">
+                            <i class="fa fa-life-bouy icon-bg-2"></i> 信息管理</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="3river-manage.html">
+                            <i class="fa fa-bullseye icon-bg-3"></i> 巡河管理</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="4.1event-steps.html">
+                            <i class="fa fa-suitcase icon-bg-4"></i> 事件管理</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="5check.html">
+                            <i class="fa fa-tasks icon-bg-5"></i> 抽查督导</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg hover">
+                        <a href="6.1exam-paper.html">
+                            <i class="fa  fa-print icon-bg-6"></i> 考核评估</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="7statistic.html">
+                            <i class="fa  fa-signal icon-bg-7"></i> 统计分析</a>
+                    </button>
+                    <button type="button" class="bk-margin-10 btn btn-default btn-lg">
+                        <a href="8river-video.html">
+                            <i class="fa fa-video-camera icon-bg-8"></i> 河道视频</a>
+                    </button>
+                </div>
+            </div>
+            <!-- 横版导航右侧 -->
+            <div class="navbar-right">
+                <button type="button" class="bk-margin-10 btn btn-default btn-lg mobile-menu-btn" style="padding: 10PX 30px;">
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <div class="userbox">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <figure class="profile-picture hidden-xs">
+                            <img src="assets/img/avatar.jpg" class="img-circle" alt="" />
+                        </figure>
+                        <div class="profile-info">
+                            <span class="name">张三</span>
+                            <span class="role">管理员</span>
+                        </div>
+                        <i class="fa custom-caret"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li class="dropdown-menu-header bk-bg-white bk-margin-top-30">
+                                <a href="">
+                                    <i class="fa fa-sun-o"></i> 设置</a>
+                            </li>
+                            <li>
+                                <a href="page-login.html">
+                                    <i class="fa fa-power-off"></i> 退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End: Header -->
+
+    <!-- Start: Content -->
+    <div class="container-fluid content">
+        <div class="row">
+
+            <!-- 竖版导航 -->
+            <div class="sidebar">
+                <div class="sidebar-collapse">
+                    <!-- Sidebar Header Logo-->
+                    <div class="sidebar-header">
+                        <img src="assets/img/logo.png" class="img-responsive" alt="" />
+                    </div>
+                    <!-- Sidebar Menu-->
+                    <div class="sidebar-menu">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            <div class="flag">
+                                辉发河河长制
+                                <br/>综合信息管理平台
+                            </div>
+                            <ul class="nav nav-sidebar">
+                                <li>
+                                    <a href="6.1exam-paper.html">
+                                        <span>
+                                            <i class="fa fa-life-bouy" aria-hidden="false"></i>考核评估</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="6.2exam-serch.html">
+                                        <span>
+                                            <i class="fa fa-tasks"></i> 考核查询</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Sidebar Menu-->
+                </div>
+                <!-- Sidebar Footer-->
+                <div class="sidebar-footer">
+
+                </div>
+                <!-- End Sidebar Footer-->
+            </div>
+            <!-- 竖版导航 -->
+
+            <!-- Main Page -->
+            <div class="main ">
+                <!-- 主体开始 -->
+                <!-- 搜索框 -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default bk-bg-white">
+                            <ul class="breadcrumb">
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">抽查详情</a></li>
+                            </ul>
+                            <div class="panel-heading bk-bg-white">
+                                <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                                    <tr class="text-center">
+                                        <td>
+                                            编号：
+                                        </td>
+                                        <td>
+                                            2018179179
+                                        </td>
+                                        <td>
+                                            发起人：
+                                        </td>
+                                        <td>
+                                            李丽
+                                        </td>
+                                        <td>抽查时间：</td>
+                                        <td>
+                                            2018-10-10 14:00:21
+                                        </td>
+                                        <td>被查人数：</td>
+                                        <td>
+                                            1
+                                        </td>
+
+                                        <td>
+                                            <button type="button" class="bk-margin-5 btn btn-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="panel panel-default bk-bg-white">
+
+                                        <div class="panel-body">
+                                            <button type="button" class="bk-margin-5 btn btn-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导出</font></font></button>
+                                            <div id="datatable-default_wrapper" class="dataTables_wrapper no-footer">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped dataTable no-footer" id="datatable-default" role="grid" aria-describedby="datatable-default_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending" style="width: 277px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">姓名</font>
+                                                                    </font>
+                                                                </th>
+                                                                <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 370px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">电话</font>
+                                                                    </font>
+                                                                </th>
+                                                                <th class="sorting" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 345px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">部门</font>
+                                                                    </font>
+                                                                </th>
+                                                                <th class="hidden-phone sorting" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 236px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">地点</font>
+                                                                    </font>
+                                                                </th>
+                                                                <th class="hidden-phone sorting" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 174px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">状态</font>
+                                                                    </font>
+                                                                </th>
+                                                                <th class="hidden-phone sorting" tabindex="0" aria-controls="datatable-default" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 174px;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">分数</font>
+                                                                    </font>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="gradeA odd" role="row">
+                                                                <td class="sorting_1">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">吴伟</font>
+                                                                    </font>
+                                                                </td>
+                                                                <td>
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">15945632718</font>
+                                                                    </font>
+                                                                </td>
+                                                                <td>
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">巡查部</font>
+                                                                    </font>
+                                                                </td>
+                                                                <td class="center hidden-phone">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;"></font>
+                                                                    </font>
+                                                                </td>
+                                                                <td>
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">未回传</font>
+                                                                    </font>
+                                                                </td>
+                                                                <td class="center hidden-phone">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;"><a href="#">未打分</a></font>
+                                                                    </font>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row datatables-footer">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <div class="dataTables_info" id="datatable-default_info" role="status" aria-live="polite">
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">显示报表中的1到10个</font>
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <div class="dataTables_paginate paging_bs_normal" id="datatable-default_paginate">
+                                                            <ul class="pagination">
+                                                                <li class="prev disabled"><a href="#"><span class="fa fa-chevron-left"></span></a></li>
+                                                                <li class="active">
+                                                                    <a href="#">
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">1</font>
+                                                                        </font>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">2</font>
+                                                                        </font>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">3</font>
+                                                                        </font>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">4</font>
+                                                                        </font>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">5</font>
+                                                                        </font>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="next"><a href="#"><span class="fa fa-chevron-right"></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Page -->
+
+            <!-- Footer -->
+            <div id="footer">
+                <ul>
+                    <li>
+                        桦甸市版权所有
+                    </li>
+                </ul>
+            </div>
+            <!-- End Footer -->
+
+        </div>
+    </div>
+    <!--/container-->
+
+
+    <div class="clearfix"></div>
+
+
+    <!-- start: JavaScript-->
+
+    <!-- Vendor JS-->
+    <script src="assets/vendor/js/jquery.min.js"></script>
+    <script src="assets/vendor/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/vendor/skycons/js/skycons.js"></script>
+    <script src="assets/vendor/js/pace.min.js"></script>
+
+    <!-- Plugins JS-->
+    <script src="assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+    <script src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/plugins/bootkit/js/bootkit.js"></script>
+    <script src="assets/plugins/magnific-popup/js/magnific-popup.js"></script>
+    <script src="assets/plugins/moment/js/moment.min.js"></script>
+    <script src="assets/plugins/fullcalendar/js/fullcalendar.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.pie.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.resize.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.stack.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.time.min.js"></script>
+    <script src="assets/plugins/flot-tooltip/js/jquery.flot.tooltip.js"></script>
+    <script src="assets/plugins/chart-master/js/Chart.js"></script>
+    <script src="assets/plugins/jqvmap/jquery.vmap.js"></script>
+    <script src="assets/plugins/jqvmap/data/jquery.vmap.sampledata.js"></script>
+    <script src="assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="assets/plugins/sparkline/js/jquery.sparkline.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/jquery.mmenu.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+
+    <!-- Pages JS -->
+    <script src="assets/js/pages/index.js"></script>
+    <!-- datetime JS -->
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- end: JavaScript-->
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(function() {
+        $('#time_1,#time_2').datetimepicker({
+            language: 'zh-CN', //选择语言，需要相应语言包支持
+            format: 'yyyy-mm-dd  hh:ii', //显示格式可为yyyymm/yyyy-mm-dd/yyyy.mm.dd 
+            weekStart: 1, //0-周日,6-周六 。默认为0  
+            todayBtn: 1, //true时"今天"按钮仅仅将视图转到当天的日期。如果是'linked'，当天日期将会被选中。   
+            minView: 0, //最小时间视图。默认0-'hour'  
+            autoclose: 1,
+            todayHighlight: true, //默认值: false,如果为true, 高亮当前日期。  
+            startView: 2, //打开时显示的视图。0-'hour' 1-'day' 2-'month' 3-'year' 4-'decade' 
+            forceParse: 0, //当输入非格式化日期时，强制格式化。默认true  
+            showMeridian: 1,
+            bootcssVer: 3, //显示向左向右的箭头  
+            language: 'zh-CN' //语言  
+        });
+    })
+</script>

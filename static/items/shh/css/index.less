@@ -1,0 +1,1065 @@
+﻿@import "css3-library";
+@import "definition";
+
+
+@media screen and (max-width:1920px) {
+    .row {
+        overflow: hidden;
+        margin-top: 1%;
+    }
+
+    ///////////////////////////////////////第一屏
+
+    .content_1 {
+        background: url(../image/bg_1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 1080px;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .first_img {
+        .content_center(100px);
+        padding-top: 15%;
+
+        img {
+            .img(100%);
+        }
+    }
+
+    ///////////////////////////////////////第二屏
+
+    .content_2 {
+        background: url(../image/bg_2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 1080px;
+        min-height: 100vh;
+        position: relative;
+        padding: 5% 0;
+    }
+    ///////////////////////////////////////新闻
+    .two_block .content {
+        overflow: hidden;
+    }
+
+    .newsAndOpen {
+        float: left;
+        width: 70%;
+        margin-right: 1%;
+    }
+
+    .news {
+        overflow: hidden;
+    }
+
+    .news_wrap {
+        width: 46%;
+        float: left;
+        position: relative;
+
+        img {
+            .img(100%);
+        }
+    }
+
+    .news_wrap_bottom {
+        position: absolute;
+        width: 98%;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 3% 1%;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .news_wrap_intro {
+        color: #fff;
+        font-size: 0.85em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 60%;
+        float: left;
+    }
+    .news_word {
+        width: 54%;
+        float: right;
+        background: @dark_color;
+        padding: 3% 0;
+
+        li {
+            margin: 0 3% 1.18% 3%;
+            .line_height(30px);
+            .transition(background 0.5s);
+
+            &:hover {
+                background: @theme_dark_color;
+            }
+
+            a {
+                color: #fff;
+                font-size: 0.9em;
+                overflow: hidden;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .news_name {
+        float: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 70%;
+    }
+
+    .news_time {
+        float: right;
+    }
+
+    ///////////////////////////////////////政务公开
+
+    .open {
+        background: #fff;
+
+        ul {
+            overflow: hidden;
+        }
+    }
+
+    .open_btn {
+        float: left;
+        width: 1/5*100%;
+        .transition(background 0.5s);
+
+        a {
+            color: @dark_color;
+            overflow: hidden;
+            padding: 18% 0;
+
+            img {
+                width: 25%;
+                float: left;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+
+        &:hover {
+            background: @theme_light_color;
+        }
+    }
+
+    .open_btn_checked {
+        background: @theme_light_color;
+    }
+
+    .open_btn_word {
+        font-size: 1em;
+        margin-top: 3px;
+    }
+    ///////////////////////////////////////视频
+    .video {
+        float: right;
+        width: 28.5%;
+    }
+
+    .video_top {
+        position: relative;
+
+        & > img {
+            .img(100%);
+        }
+    }
+
+    .video_btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            margin-top: 30%;
+        }
+    }
+
+    .video_bottom {
+        background: #fff;
+        text-align: center;
+        color: @dark_color;
+    }
+
+    .video_bottom_body {
+        padding: 9% 0;
+    }
+
+    .video_chi {
+        font-size: 1.3em;
+    }
+
+    ///////////////////////////////////////互动交流、办事服务、组织机构
+    .three_block {
+        height: 130px;
+    }
+
+    .three_block .content {
+        background: #fff;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .three_block_tittle {
+        background: @dark_color;
+        color: #fff;
+        float: left;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        padding: 2.5% 0;
+        font-size: 1.1em;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: @theme_light_color;
+            color: @dark_color;
+        }
+    }
+
+    ///////////////////////////////////////互动交流
+
+    .communi {
+        float: left;
+        overflow: hidden;
+        width: 84%;
+        height: 100%;
+
+        ul {
+            float: left;
+            width: 90%;
+            height: 100%;
+        }
+    }
+
+    .communi .three_block_tittle {
+        width: 10%;
+        padding: 3% 0;
+    }
+
+    .communi_btn {
+        float: left;
+        overflow: hidden;
+        width: 1/4*100%;
+        height: 100%;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: lighten(@theme_light_color,20%);
+        }
+
+        img {
+            .img(35%);
+            float: left;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+
+        a {
+            height: 100%;
+        }
+    }
+
+    .communi_word {
+        float: left;
+        width: 50%;
+        color: @dark_color;
+        text-align: center;
+        margin-top: 18%;
+    }
+
+    .communi_chi {
+        font-size: 1.4em;
+    }
+
+    .three_block_checked {
+        background: @theme_light_color;
+        color: @dark_color;
+    }
+
+    ///////////////////////////////////////多组按钮
+
+    .btn_group .content {
+        background: #fff;
+    }
+
+    .btn_group {
+        ul {
+            overflow: hidden;
+
+            li {
+                width: (1-0.005)/6*100%;
+                float: left;
+                text-align: center;
+                padding: 1.5% 0;
+                border-bottom: 1px solid #e1e1e1;
+                border-right: 1px solid #e1e1e1;
+                .transition(background 0.5s);
+
+                &:hover {
+                    background: #e9e9e9;
+                }
+
+                img {
+                    width: 28%;
+                }
+            }
+        }
+    }
+
+    .btn_group_chi {
+        color: @middle_color;
+        font-size: 1.3em;
+        margin: 5px;
+    }
+
+    .btn_group_eng {
+        color: @light_color;
+        font-size: 0.9em;
+    }
+
+    .activity {
+        img {
+            width: 100%;
+        }
+    }
+    ///////////////////////////////////////第三屏
+
+    .content_3 {
+        background: url(../image/bg_3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 1080px;
+        min-height: 100vh;
+        position: relative;
+        padding: 5% 0 0 0;
+    }
+
+    ///////////////////////////////////////旅游景点
+
+    .spot .content {
+        background: #fff;
+        overflow: hidden;
+        border-bottom: 1px solid @line_color;
+    }
+
+    .spot_img {
+        float: left;
+        width: 30%;
+        margin: 1%;
+
+        a {
+            overflow: hidden;
+            display: none;
+
+            img {
+                .img(100%);
+                .transition(transform 0.5s);
+
+                &:hover {
+                    .scale(1.2,1.2);
+                }
+            }
+        }
+    }
+
+    .spot_word {
+        float: right;
+        width: 66%;
+        padding: 1% 1% 1% 0;
+    }
+
+    .spot_tittle {
+        width: 100%;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.00);
+    }
+
+    .spot_tittle_line {
+        width: 100%;
+        border-bottom: 1px solid @line_color;
+        margin-top: 20px;
+    }
+
+    .spot_tittle_word {
+        color: @dark_color;
+        text-align: center;
+        background: #fff;
+        margin-left: 40%;
+        font-size: 1.5em;
+        width: 20%;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        z-index: 5;
+        .transition(color 0.5s);
+
+        &:hover {
+            color: @theme_dark_color;
+        }
+    }
+
+    .spot_btns {
+        margin-top: 4%;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.00);
+
+        ul {
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+
+            li {
+                float: left;
+                width: 1/6*100%;
+                margin-right: 4%;
+                margin-bottom: 3%;
+
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .spot_btn {
+        background: @theme_dark_color;
+        color: #fff;
+        text-align: center;
+        .line_height(40px);
+        .transition(background 0.5s);
+
+        &:hover {
+            background: @dark_color;
+        }
+    }
+
+    .spot_btn_line {
+        width: 98%;
+        border-bottom: 1px solid @line_color;
+        margin: 0 0 2% 0;
+        padding: 2% 0;
+    }
+
+    ///////////////////////////////////////松花湖摄像
+
+    .photo .content {
+        background: #fff;
+        padding-bottom: 1%;
+
+        ul {
+            overflow: hidden;
+            margin: 0 1%;
+
+            li {
+                float: left;
+                width: 1/4.15*100%;
+                margin-right: 1%;
+
+                a {
+                    overflow: hidden;
+
+                    img {
+                        .img(100%);
+                        .transition(transform 0.5s);
+
+                        &:hover {
+                            .scale(1.2,1.2);
+                        }
+                    }
+                }
+
+
+                &:nth-child(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .photo_tittle {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 3%;
+        color: @dark_color;
+        .transition(color 0.5s);
+
+        &:hover {
+            color: @theme_dark_color;
+        }
+    }
+
+
+    ///////////////////////////////////////旅游线路
+
+    .three_items {
+        background: #fff;
+        width: (1-0.02)/3*100%;
+        float: left;
+        margin-right: 1%;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+
+    .three_items_img {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            .img(100%);
+            .transition(transform 0.5s);
+
+            &:hover {
+                .scale(1.2,1.2);
+            }
+        }
+    }
+
+    .three_items_content {
+        padding: 4%;
+
+        ul {
+            overflow: hidden;
+
+            li {
+                width: 50%;
+                margin-bottom: 3%;
+
+                a {
+                    color: @dark_color;
+                    font-size: 0.9em;
+                    .transition(color 0.5s);
+
+                    &:hover {
+                        color: @theme_dark_color;
+                    }
+                }
+
+                &:nth-child(2n+1) {
+                    float: left;
+                }
+
+                &:nth-child(2n) {
+                    float: right;
+
+                    a {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .three_items_tittle {
+        color: @dark_color;
+        font-size: 1.2em;
+        margin-bottom: 2%;
+        .transition(color 0.5s);
+
+        &:hover {
+            color: @theme_dark_color;
+        }
+    }
+
+    .three_items_btn {
+        background: @theme_dark_color;
+        color: #fff;
+        text-align: center;
+        .line_height(35px);
+        .transition(background 0.5s);
+
+        &:hover {
+            background: @dark_color;
+        }
+    }
+
+
+    ///////////////////////////////////////松花湖之旅
+
+    .tour_tittle {
+        background: #fff;
+        color: @dark_color;
+        font-size: 1.5em;
+        text-align: center;
+        .line_height(60px);
+        border-top: 3px solid @theme_dark_color;
+    }
+
+    .tour_tittle_triangle {
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+        border-color: #fff transparent transparent transparent;
+        margin-left: 49%;
+    }
+
+    .tour_content {
+        overflow: hidden;
+
+        & > li {
+            background: #fff;
+            width: (1-0.028)/3*100%;
+            float: left;
+            margin-right: 1%;
+            margin-bottom: 1%;
+            border-right: 3px solid @theme_dark_color;
+            position: relative;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .tour_block_tittle {
+        margin: 3%;
+        float: left;
+        width: 55%;
+        position: relative;
+
+        img {
+            .img(100%);
+        }
+    }
+
+    .tour_block_word {
+        position: absolute;
+        width: 100%;
+        height: 69%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        text-align: center;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.7em;
+        padding-top: 20%;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        span {
+            font-size: 0.7em;
+        }
+    }
+
+    .tour_content_btns {
+        margin: 3% 3% 3% 0;
+
+        li {
+            margin-bottom: 2%;
+        }
+
+        a {
+            color: @dark_color;
+            font-size: 0.9em;
+            .transition(color 0.5s);
+
+            &:hover {
+                color: @theme_dark_color;
+            }
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////swiper2x版本样式
+
+    .swiper-slide {
+        height: auto !important;
+    }
+
+    .swiper-wrapper {
+        height: auto !important;
+    }
+
+    .swiper-container {
+        position: relative;
+    }
+
+    .pagination {
+        position: absolute;
+        z-index: 20;
+        left: 46%;
+        bottom: 10px;
+    }
+
+    .swiper-pagination-switch {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .swiper-visible-switch {
+        background: #aaa;
+    }
+
+    .swiper-active-switch {
+        background: #00ada7;
+    }
+
+    .arrow-left {
+        position: absolute;
+        left: 10px;
+        top: 45%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px;
+        font-size: 3em;
+        color: rgba(34, 34, 34, 0.5);
+    }
+
+    .arrow-right {
+        position: absolute;
+        right: 10px;
+        top: 45%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px;
+        font-size: 3em;
+        color: rgba(34, 34, 34, 0.5);
+    }
+    //////////////////新闻轮播下小点按钮样式
+    .news .pagination {
+        z-index: 6;
+        left: 65%;
+    }
+
+    //////////////////专题活动轮播下小点按钮样式
+    .activity .swiper-pagination-switch {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .activity .swiper-active-switch {
+        background: #00ada7;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .row {
+        margin-top: 2%;
+    }
+
+    /////////////////////////////////////////移动端 标语图片
+
+    .first_img {
+        .content_center(20%);
+        padding-top: 28%;
+
+        img {
+            .img(100%);
+        }
+    }
+
+    ///////////////////////////////////////移动端 新闻
+
+    .newsAndOpen {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .news {
+        overflow: hidden;
+    }
+
+    .news_wrap {
+        width: 100%;
+        float: none;
+    }
+
+    .news_word {
+        width: 100%;
+        float: none;
+        padding: 3% 0;
+    }
+
+    ///////////////////////////////////////移动端 政务公开
+
+    .open {
+        background: #fff;
+
+        ul {
+            overflow: hidden;
+        }
+    }
+
+    .open_btn {
+        float: left;
+        width: 1/2*100%;
+
+        a {
+            padding: 5% 0;
+        }
+    }
+
+    ///////////////////////////////////////移动端 视频
+    .video {
+        float: none;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .video_top {
+        position: relative;
+
+        & > img {
+            .img(100%);
+        }
+    }
+
+    .video_btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        .transition(background 0.5s);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            margin-top: 30%;
+        }
+    }
+
+    .video_bottom {
+        background: #fff;
+        text-align: center;
+        color: @dark_color;
+    }
+
+    .video_bottom_body {
+        padding: 9% 0;
+    }
+
+    .video_chi {
+        font-size: 1.3em;
+    }
+
+    ///////////////////////////////////////移动端 互动交流
+    .three_block.row {
+        overflow: visible;
+        height: 100px;
+    }
+
+    .three_block .content {
+        overflow: visible;
+    }
+
+    .communi {
+        width: 100%;
+    }
+
+    .communi_btn {
+
+        img {
+            .img(50%);
+            float: none;
+            margin: 10% auto;
+            display: block;
+        }
+    }
+
+    .communi_word {
+        float: none;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .communi_chi {
+        font-size: 0.9em;
+    }
+
+    /////////////////////////////////////移动端 办事服务和组织机构
+
+    .business.three_block_tittle, .organization.three_block_tittle {
+        width: 50%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    ///////////////////////////////////////移动端 多组按钮
+
+    .btn_group {
+        ul {
+            overflow: hidden;
+
+            li {
+                width: (1-0.007)/3*100%;
+                float: left;
+
+                &:nth-child(3n) {
+                    border-right: none;
+                }
+
+                img {
+                    width: 28%;
+                }
+            }
+        }
+    }
+    
+    ///////////////////////////////////////移动端 专题活动
+
+    .activity {
+        .content {
+            width: 98%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    .activity .pagination {
+        position: absolute;
+        z-index: 20;
+        left: 46%;
+        bottom: 5px;
+    }
+    .activity .arrow-left,.activity .arrow-right {
+        top: 25%;
+    }
+
+    ///////////////////////////////////////移动端 旅游景点
+
+    .spot .content {
+        padding-bottom:18%;
+    }
+
+    .spot_img {
+        float: none;
+        width: 96%;
+        margin: 10px auto;
+    }
+
+    .spot_word {
+        float: none;
+        width: 96%;
+        margin:0 auto;
+    }
+
+    .spot_tittle_word {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .spot_btns {
+        margin-top: 8%;
+
+       
+    }
+    .spot_btn_line {
+        width: 98%;
+        border-bottom: 1px solid @line_color;
+        margin: 0 0 2% 0;
+        padding: 2% 0;
+
+        &:nth-child(2) {
+            padding:5% 0;
+            margin-bottom: 10%;
+        }
+    }
+
+    ///////////////////////////////////////松花湖摄像
+
+    .photo .content {
+        background: #fff;
+        padding-bottom: 0.8%;
+
+        ul {
+            overflow: hidden;
+            margin: 0 0 0 1%;
+
+            li {
+                width: 49%;
+
+                a {
+                    img {
+                        .img(100%);
+                        margin-bottom:2%;
+                    }
+                }
+
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    ///////////////////////////////////////旅游线路
+
+    .three_items {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom:2%;
+    }
+
+    ///////////////////////////////////////松花湖之旅
+
+    .tour_tittle {
+        background: #fff;
+        color: @dark_color;
+        font-size: 1.5em;
+        text-align: center;
+        .line_height(60px);
+        border-top: 3px solid @theme_dark_color;
+    }
+
+    .tour_tittle_triangle {
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: dashed dashed solid dashed;
+        border-color: #fff transparent transparent transparent;
+        margin-left: 49%;
+    }
+
+    .tour_content {
+
+        & > li {
+            width: 99%;
+        }
+    }
+}

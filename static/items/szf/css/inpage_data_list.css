@@ -1,0 +1,26 @@
+@media screen and (max-width: 1920px) {
+  .inpage_left .inpage_title_1 {
+    width: 100%;
+    text-align: center;
+  }
+  .inpage_list_ul {
+    padding: 10px 10px;
+    border: 1px solid rgba(14, 159, 238, 0.2);
+    border-top: 0;
+    display: none;
+  }
+  .inpage_list_ul a {
+    padding: 10px 20px;
+    color: #1f1f1f;
+    margin-bottom: 3px;
+    font-size: 0.95em;
+    /*background: #f7f7f7;*/
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+  }
+  .inpage_list_ul a:hover {
+    color: #0e9fee;
+  }
+}

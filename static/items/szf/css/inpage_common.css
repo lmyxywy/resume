@@ -1,0 +1,143 @@
+.inpage_top {
+  background: #fff;
+  padding: 0px 30px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.inpage_top a {
+  margin-right: 10px;
+  display: inline-block;
+  color: #1f1f1f;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+}
+.inpage_top a:hover {
+  color: #0e9fee;
+}
+.inpage_top_column {
+  font-size: 2em;
+}
+.inpage_top_column img {
+  vertical-align: middle;
+  margin-left: 30px;
+}
+.inpage_content {
+  background: #fff;
+  padding: 40px;
+  overflow: hidden;
+}
+.inpage_left {
+  float: left;
+  width: 27%;
+  border-right: 1px solid #dedede;
+}
+.inpage_left_body {
+  margin-right: 40px;
+}
+.inpage_title {
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: #1f1f1f;
+  font-size: 1.5em;
+}
+.inpage_title a,
+.inpage_title div {
+  width: 50%;
+  float: left;
+  color: #1f1f1f;
+}
+.inpage_title_1 {
+  color: #0e9fee !important;
+}
+.inpage_title_2 {
+  color: #1f1f1f;
+}
+.inpage_block {
+  margin-bottom: 40px;
+}
+.inpage_row {
+  background: #dbf1fc;
+  margin-top: 20px;
+  padding: 15px 30px;
+  color: #1f1f1f;
+  overflow: hidden;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+}
+.inpage_row:hover {
+  background: #b4e6ff;
+}
+.inpage_right {
+  float: right;
+  width: 72.5%;
+}
+.inpage_right_body {
+  margin-left: 40px;
+}
+.block_list li {
+  border-bottom: 0;
+}
+.inpage_pic {
+  overflow: hidden;
+}
+.inpage_pic li {
+  float: left;
+  width: 29.85074627%;
+  margin-right: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.inpage_pic li:hover {
+  background: #ededed;
+}
+.inpage_pic li img {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+.inpage_pic li div {
+  color: #000;
+  font-size: 0.9em;
+  margin-top: 10px;
+  line-height: 18px;
+  height: 35px;
+  overflow: hidden;
+  padding: 0 5px;
+}
+@media screen and (max-width: 768px) {
+  .inpage_top {
+    padding-bottom: 15px;
+    margin-top: 5px;
+  }
+  .inpage_content {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .inpage_left {
+    width: 100%;
+    border-right: 0;
+  }
+  .inpage_left_body {
+    margin-right: 0px;
+  }
+  .inpage_right {
+    width: 100%;
+  }
+  .inpage_right_body {
+    margin-left: 0px;
+  }
+  .list_name {
+    width: 60%;
+  }
+  .inpage_pic {
+    overflow: hidden;
+  }
+  .inpage_pic li {
+    width: 45.45454545%;
+    margin-right: 20px;
+  }
+}

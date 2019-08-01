@@ -1,0 +1,140 @@
+﻿@import "css3-library";
+@import "definition";
+
+
+
+//////////////////////////////////////////////////////////////台式
+
+    .inpage_top {
+        padding:20px 40px;
+    }
+    .inpage_search {
+        display: block;
+
+        .header_search {
+            overflow: hidden;
+            float: right;
+            margin-right: 0;
+
+            input {
+                width: 60%;
+                background: @line_color;
+            }
+        }
+    }
+    .inpage_search_word {
+        float:left;
+        line-height:35px;
+    }
+    .inpage_search_intro {
+        font-size: 1.3em;
+        color: @word_color_1;
+        margin-bottom:20px;
+
+        span {
+            color: @theme_color_1;
+
+            b {
+                display: inline-block;
+                margin: 0 10px;
+                font-size: 1.4em;
+            }
+        }
+    }
+    .inpage_search_list {
+        li {
+            border-bottom: 1px dashed @line_color;
+            padding: 30px 0;
+            .transition(background 0.5s);
+
+            &:hover {
+                background:@second_nav_bg_1;
+            }
+        }
+    }
+    .inpage_search_list_top {
+        overflow:hidden;
+        margin-bottom:10px;
+        font-size:1.3em;
+    }
+    .inpage_search_tittle {
+        float: left;
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color:@word_color_1;
+    }
+    .inpage_search_time {
+        float:right;
+        text-align:right;
+        width:20%;
+        font-size:0.9em;
+        color:@theme_color_1;
+    }
+    .inpage_search_list_content {
+        width:90%;
+        line-height:25px;
+        color:@word_color_2;
+        font-size:0.95em;
+    }
+        .inpage_content {
+            *width:100%;
+        }
+        .inpage_search_list li{
+            *width:94%;
+        }
+        .inpage_top {
+            *margin-top:260px;
+        }
+        .inpage_top_column {
+            *float:left;
+        }
+        .inpage_top {
+            *overflow:hidden;
+        }
+
+
+@media screen and (max-width:1366px) {
+
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .inpage_top {
+        padding:15px;
+        overflow:hidden;
+    }
+    .header_search {
+        width: 100%;
+        text-align:left;
+
+        input {
+            width:100%!important;
+        }
+
+        img {
+            top:60%;
+        }
+    }
+    .inpage_search_word {
+        width:100%;
+    }
+    .inpage_search_intro {
+        span {
+            display:block;
+        }
+    }
+    .inpage_search_tittle,.inpage_search_time {
+        float:none;
+        width:100%;
+    }
+    .inpage_search_time {
+        margin-top:10px;
+        text-align:left;
+    }
+    .inpage_search_list_content {
+        width:100%;
+    }
+}
