@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>辉发河河长制微信公众平台</title>
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="wx">
+    <div class="wx-header">
+        <div class="row">
+            <div class="col-xs-2">
+                <a href="wx-index.html"><i class="fa fa-angle-left fa-2x"></i></a>
+            </div>
+            <div class="col-xs-10">新闻动态</div>
+        </div>
+
+    </div>
+    <div class="wx-body">
+        <div class="timelineProfile timeline-profile">
+            <div class="timeline-body">
+                <ol class="timeline-items">
+                    <li>
+                        <div class="timeline-box">
+                            <a href="wx-news-detail.html">
+                                <p class="text-muted">2019/01/07</p>
+                                <p class="wx-news-word">
+                                    牢固树立绿水青山就是金山银山的发展理念加强水环境保护工作。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-box">
+                            <a href="wx-news-detail.html">
+                                <p class="text-muted">2019/01/07</p>
+                                <p class="wx-news-word">
+                                    牢固树立绿水青山就是金山银山的发展理念加强水环境保护工作。
+                                </p>
+                                <div class="img-timeline">
+                                    <a class="img-thumbnail lightbox">
+                                        <img class="img-responsive" width="215" src="assets/img/general/general-img-3.jpg">
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-box">
+                            <a href="wx-news-detail.html">
+                                <p class="text-muted">2019/01/07</p>
+                                <p class="wx-news-word">
+                                    牢固树立绿水青山就是金山银山的发展理念加强水环境保护工作。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-box">
+                            <a href="wx-news-detail.html">
+                                <p class="text-muted">2019/01/07</p>
+                                <p class="wx-news-word">
+                                    牢固树立绿水青山就是金山银山的发展理念加强水环境保护工作。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-box">
+                            <a href="wx-news-detail.html">
+                                <p class="text-muted">2019/01/07</p>
+                                <p class="wx-news-word">
+                                    牢固树立绿水青山就是金山银山的发展理念加强水环境保护工作。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="assets/vendor/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.wx-show-2').hide()
+                // 导航隐藏显示
+            $('.wx-nav-f').click(function() {
+                var index = parseInt($(this).index('.wx-nav-f'))
+                    // alert(index)
+                if ($('.wx-nav-s').eq(index).css('display') === 'block') {
+                    $('.wx-nav-s').eq(index).hide()
+                } else {
+                    $('.wx-nav-s').eq(index).show()
+                    $('.wx-nav-s').not(":eq(" + index + ")").hide()
+                }
+
+            })
+
+            $('.wx-body').click(function() {
+                $('.wx-nav-s').hide()
+
+            })
+        })
+
+        function showInfo(index) {
+            $('.wx-show-2').eq(index).show()
+            $('.wx-nav-s').hide()
+        }
+    </script>
+</body>
+
+</htm动态
