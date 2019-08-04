@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+ul{list-style:none;}
+body {font-size:12px; line-height:24px; color:#000000; font-family: "宋体"; }
+img{ border:none}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:none;
+}
+.mt10{ margin-top:10px}
+.gray{ color:#333;}
+.gray a{ color:#333;}
+.gray a:hover{color:#cc0000;}
+
+.red{ color:#cc0000; font-size:12px}
+.red a{ color:#cc0000; font-size:12px}
+.red a:hover{ color:#000000; font-size:12px}

@@ -1,0 +1,60 @@
+.mayor_post .inpage_title_2 {
+  text-align: right;
+}
+.mayor_photo {
+  text-align: center;
+  margin: 40px 0;
+}
+.mayor_photo img {
+  width: 80%;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+.mayor_row {
+  overflow: hidden;
+}
+.mayor_row img {
+  vertical-align: bottom;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.mayor_row span {
+  line-height: 25px;
+}
+.mayor_colleague .inpage_title_1 {
+  width: 100%;
+  text-align: center;
+}
+.mayor_colleague .inpage_row span:nth-child(1) {
+  float: left;
+  color: #0e9fee;
+}
+.mayor_colleague .inpage_row span:nth-child(2) {
+  float: right;
+}
+.work .block_list {
+  border-bottom: 1px dashed #dedede;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.pic li:nth-child(3),
+.pic li:nth-child(6) {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .mayor_photo img {
+    width: 60%;
+  }
+  .pic {
+    margin-bottom: 0;
+  }
+  .pic li:nth-child(3) {
+    margin-right: 20px;
+  }
+  .pic li:nth-child(2),
+  .pic li:nth-child(4),
+  .pic li:nth-child(6) {
+    margin-right: 0;
+  }
+}
