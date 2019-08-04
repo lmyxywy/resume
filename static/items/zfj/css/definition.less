@@ -1,0 +1,54 @@
+﻿@import "css3-library";
+
+/////////////////////////////////////////////////////////定义方法/////////////////////////////////////////////////////////
+
+@theme_color: #00acee; //主题颜色
+@embe_color: #17213c; //点缀颜色
+@btn_hover_color: #0087bb; //点缀颜色
+@word_color_1:#4c4c4c;//一级标题字体颜色
+@word_color_2:lighten(@word_color_1,7%);//二级标题字体颜色
+@word_color_3:lighten(@word_color_1,14%);//二级标题字体颜色
+@blackbg_color:lighten(@word_color_1,40%);
+@float_line_color:lighten(@word_color_1,60%);
+@tittle_margin:2%;//一级标题上下距离
+@block_padding:5%;//白色块内边距（上下）
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.content_center(@width) {
+    width: @width;
+    margin: 0 auto;
+}
+
+.line_height(@height) {
+    height: @height;
+    line-height: @height;
+}
+
+.button_hover(@color: #fd644d;@radius: 8px) {
+    color: @color;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.6);
+}
+
+.img(@width) {
+    width: @width;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+.nomal_btn(@width;@background;@color) {
+    width: @width;
+    .line_height(60px);
+    background: @background;
+    color: @color;
+    text-align: center;
+    font-size: 1.06em;
+    cursor: pointer;
+
+    &:hover {
+    }
+}
