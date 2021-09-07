@@ -1,0 +1,132 @@
+.import_first {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.import_first_tittle {
+  float: left;
+  width: 9%;
+}
+.import_first_content {
+  float: right;
+  font-size: 2em;
+  color: #8e0d2b;
+  width: 91%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+}
+.import_first_content:hover {
+  color: #0e9fee;
+}
+.inpage_content {
+  overflow: hidden;
+}
+.inpage_block {
+  width: 47%;
+}
+.inpage_block:nth-child(2) {
+  float: left;
+}
+.inpage_block:nth-child(3) {
+  float: right;
+}
+.list_name {
+  width: 80%;
+}
+.pic {
+  float: none;
+  clear: both;
+  width: 100%;
+}
+.inpage_pic li {
+  width: 22.25%;
+  margin-bottom: 0;
+}
+.inpage_pic li:nth-child(4) {
+  margin-right: 0;
+}
+.import_video {
+  overflow: hidden;
+  width: 100%;
+}
+.import_video .c-call.multi-1 {
+  height: auto !important;
+}
+.import_video_left {
+  float: left;
+  width: 32%;
+}
+.import_video_right {
+  float: right;
+  width: 67%;
+  overflow: hidden;
+  height: 210px;
+}
+.import_video_list {
+  margin-left: 4%;
+}
+.import_video_list ul {
+  color: #0e9fee;
+}
+.import_video_list li {
+  line-height: 40px;
+  font-size: 1.2em;
+  list-style: initial;
+}
+.import_video_list li:hover {
+  background: #ececec;
+}
+.import_video_list li a {
+  color: #1f1f1f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: visible ;
+}
+@media screen and (max-width: 768px) {
+  .import_first {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .import_first_tittle {
+    width: 25%;
+  }
+  .import_first_content {
+    font-size: 1.2em;
+    color: #8e0d2b;
+    width: 75%;
+    white-space: initial;
+    margin-top: 8px;
+    line-height: 30px;
+    height: 60px;
+    overflow: hidden;
+  }
+  .inpage_block {
+    width: 100%;
+    float: none;
+  }
+  .list_name {
+    width: 70%;
+  }
+  .inpage_pic li {
+    width: 46%;
+    margin-bottom: 15px;
+  }
+  .inpage_pic li:nth-child(2),
+  .inpage_pic li:nth-child(4) {
+    margin-right: 0;
+  }
+  .import_video_left,
+  .import_video_right {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+  .import_video_right {
+    padding-top: 15px;
+  }
+}

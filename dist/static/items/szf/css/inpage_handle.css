@@ -1,0 +1,259 @@
+.inpage_left {
+  width: 35%;
+}
+.inpage_left .inpage_title_1 {
+  width: 100%;
+  text-align: center;
+}
+.inpage_right {
+  width: 63.5%;
+}
+.gov_event ul {
+  overflow: hidden;
+}
+.gov_event li {
+  width: 30.66666667%;
+  float: left;
+  margin-right: 4%;
+}
+.gov_event li:nth-child(even) {
+  float: left;
+}
+.gov_event li:nth-child(3n) {
+  margin-right: 0;
+}
+.gov_event .inpage_row {
+  text-align: center;
+  padding: 15px 10px;
+}
+.block_tittle_1 {
+  width: 70%;
+  margin-bottom: 10px;
+}
+.inpage_data_img {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.inpage_data_img img {
+  width: 49%;
+}
+.inpage_data_img img:nth-child(1) {
+  float: left;
+}
+.inpage_data_img img:nth-child(2) {
+  float: right;
+}
+.list_name {
+  width: 100%;
+}
+.handle_right_top {
+  overflow: hidden;
+}
+.handle_two_block {
+  float: left;
+  width: 80%;
+}
+.handle_department ul {
+  background: rgba(14, 159, 238, 0.2);
+  overflow: hidden;
+  padding: 10px 10px;
+  margin-top: 30px;
+}
+.handle_department ul li {
+  float: left;
+  width: 16.66666667%;
+  text-align: center;
+}
+.handle_department ul li a {
+  color: #1f1f1f;
+  padding: 10px 0;
+  font-size: 0.95em;
+}
+.handle_department ul li a:hover {
+  color: #0e9fee;
+}
+.handle_convenient {
+  float: right;
+  width: 16%;
+}
+.handle_convenient .inpage_title_1 {
+  width: 100%;
+  text-align: center;
+}
+.handle_convenient li a {
+  background: #0e9fee;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+}
+.handle_convenient li a:hover {
+  background: #007bbe;
+}
+.handle_convenient li img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+.handle_tourism ul {
+  overflow: hidden;
+  margin-top: 28px;
+}
+.handle_tourism li {
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+}
+.handle_tourism li:nth-child(6) {
+  margin-right: 0;
+}
+.handle_tourism li a {
+  border: 1px solid #0e9fee;
+  color: #1f1f1f;
+  text-align: center;
+  padding: 15px 0;
+  transition: background 0.5s, border 0.5s;
+  -webkit-transition: background 0.5s, border 0.5s;
+  -o-transition: background 0.5s, border 0.5s;
+  -moz-transition: background 0.5s, border 0.5s;
+}
+.handle_tourism li a:hover {
+  background: rgba(14, 159, 238, 0.2);
+  border: 1px solid rgba(14, 159, 238, 0.2);
+}
+.handle_tourism li img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+.handle_yellow {
+  margin-bottom: 0;
+}
+.handle_yellow ul {
+  overflow: hidden;
+}
+.handle_yellow_block {
+  width: 46.3%;
+  overflow: hidden;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  background: rgba(14, 159, 238, 0.2);
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+}
+.handle_yellow_block:hover {
+  background: #f1faff;
+}
+.handle_yellow_block:nth-child(even) {
+  float: right;
+}
+.handle_yellow_block:nth-child(odd) {
+  float: left;
+}
+.handle_yellow_tittle {
+  float: left;
+  width: 12%;
+  font-size: 1.5em;
+  color: #0e9fee;
+  padding-top: 12%;
+  line-height: 40px;
+}
+.handle_yellow_img {
+  position: relative;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.handle_yellow_img img {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: bottom;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+}
+.handle_yellow_img img:hover {
+  transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+}
+.handle_yellow_img_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.handle_yellow_word {
+  width: 35%;
+  float: right;
+}
+.handle_yellow_word a {
+  line-height: 30px;
+  color: #1f1f1f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+.handle_yellow_word a:hover {
+  color: #0e9fee;
+}
+@media screen and (max-width: 768px) {
+  .inpage_left,
+  .inpage_right {
+    float: none;
+    width: 100%;
+  }
+  .inpage_row {
+    padding: 10px;
+  }
+  .inpage_left .inpage_title {
+    margin-bottom: 0;
+  }
+  .inpage_right li {
+    float: none;
+    width: 100%;
+  }
+  .inpage_right .inpage_title {
+    text-align: center;
+  }
+  .inpage_right .inpage_title div {
+    width: 100%;
+  }
+  .handle_two_block,
+  .handle_convenient {
+    float: none;
+    width: 100%;
+  }
+  .handle_department ul li {
+    float: left;
+    width: 33.33333333%;
+  }
+  .handle_tourism li {
+    margin-bottom: 10px;
+  }
+  .handle_yellow li {
+    float: none!important;
+  }
+  .handle_yellow {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,99 @@
+﻿@import "css3-library";
+@import "definition";
+
+
+
+//////////////////////////////////////////////////////////////台式
+
+
+
+    .inpage_left {
+        .inpage_title_1 {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .inpage_left_img {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            .transition(transform 0.5s);
+
+            &:hover {
+                .scale(1.1,1.1);
+            }
+        }
+    }
+    .gov_event {
+        ul {
+            overflow:hidden;
+        }
+
+        li {
+            width: 47%;
+
+            &:nth-child(odd) {
+                float: left;
+            }
+
+            &:nth-child(even) {
+                float: right;
+            }
+        }
+
+        .inpage_row {
+            text-align: center;
+        }
+    }
+    .block_tittle_1 {
+        width:70%;
+        margin-bottom:10px;
+    }
+    .inpage_data_img {
+        overflow: hidden;
+        margin-bottom:40px;
+
+        img {
+            width: 49%;
+
+            &:nth-child(1) {
+                float: left;
+            }
+            &:nth-child(2) {
+                float: right;
+            }
+        }
+    }
+
+
+@media screen and (max-width:1366px) {
+
+    
+}
+
+@media screen and (max-width:768px) {
+   .gov_right {
+
+        .inpage_block {
+            width:100%;
+
+            &:nth-child(odd) {
+                float: none;
+            }
+
+            &:nth-child(even) {
+                float: none;
+            }
+        }
+    }
+    .gov_btn {
+        li {
+            width: 100%;
+            margin-bottom:10px;
+        }
+    }
+}
